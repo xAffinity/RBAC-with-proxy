@@ -15,27 +15,27 @@ contract('PermissionsTestProxy', function(accounts) {
 	});
 
 	it("should pass testAnyone() via main contract", async function() {
-		await permissionsTest.testAnyone({from: deployer});
+		await permissionsTest.testAnyone({ from: deployer });
 	});
 
 	it("should pass testAnyone() via proxy", async function() {
-		await permissionsTestProxy.testAnyone({from: deployer});
+		await permissionsTestProxy.testAnyone({ from: deployer });
 	});
 
 	it("should be Admin at main contract", async function() {
-		await permissionsTest.isAdmin(deployer, {from: deployer});
+		await permissionsTest.isAdmin(deployer, { from: deployer });
 	});
 
 	it("should be Admin at proxy", async function() {
-		await permissionsTestProxy.isAdmin(deployer, {from: deployer});		
+		await permissionsTestProxy.isAdmin(deployer, { from: deployer });		
 	});
 
 	it("should pass testOnlyAdmin() via main contract", async function() {
-		await permissionsTest.testOnlyAdmin({from: deployer, gas: 6000000});
+		await permissionsTest.testOnlyAdmin({ from: deployer });
 	});
 
 	it("should pass testOnlyAdmin() via proxy", async function() {
-		await permissionsTestProxy.testOnlyAdmin({from: deployer, gas: 6000000});
+		await permissionsTestProxy.testOnlyAdmin({ from: deployer });
 	});
 
 })
