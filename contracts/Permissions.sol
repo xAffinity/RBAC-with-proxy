@@ -14,7 +14,7 @@ contract Permissions {
     }
 
     modifier onlyAdmin() {
-        require(permissionsManagerProxy.isAdmin(tx.origin));
+        require(permissionsManagerProxy.isAdmin(tx.origin), "Tx Origin not admin");
         _;
     }
 
