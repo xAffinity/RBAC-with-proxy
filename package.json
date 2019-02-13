@@ -1,0 +1,25 @@
+{
+  "name": "rbac-with-proxy",
+  "version": "1.0.0",
+  "description": "In migration `2_deploy_all` notice the lines:",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "pretty": "prettier --write --print-width 140 --tab-width 4 \"**/*.sol\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xAffinity/RBAC-with-proxy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xAffinity/RBAC-with-proxy/issues"
+  },
+  "homepage": "https://github.com/xAffinity/RBAC-with-proxy#readme",
+  "devDependencies": {
+    "prettier-plugin-solidity": "^1.0.0-alpha.18"
+  }
+}
