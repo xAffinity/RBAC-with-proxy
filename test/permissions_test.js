@@ -1,6 +1,6 @@
-var PermissionsTest = artifacts.require("PermissionsTest.sol");
-var PermissionsTestProxy = artifacts.require("PermissionsTestProxy.sol");
-var IPermissionsManager = artifacts.require("IPermissionsManager.sol");
+var PermissionsTest = artifacts.require("PermissionsTest");
+var PermissionsTestProxy = artifacts.require("PermissionsTestProxy");
+var IPermissionsManager = artifacts.require("IPermissionsManager");
 
 contract('PermissionsTestProxy', function(accounts) {
 
